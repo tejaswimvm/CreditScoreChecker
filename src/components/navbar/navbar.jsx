@@ -7,24 +7,16 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Left - Logo & Title */}
           <div className="flex items-center gap-4">
-            <img
-              src="https://www.livemint.com/lm-img/livemint-logo-v2.svg"
-              alt="Mint Logo"
-              className="h-8 w-auto"
-            />
+            <img src="https://images.livemint.com/img/2019/10/25/1600x900/live_mint_logo_1572001076410.png" alt="Livet Logo" className="h-8 w-auto" />
             <span className="text-lg font-semibold text-gray-800">
-              Credit Score Checker
+             Livet.in
             </span>
           </div>
 
           {/* Right - Powered By CRIF */}
           <div className="flex items-center gap-2">
             <span className="text-sm text-gray-500">Powered by</span>
-            <img
-              src="https://www.livemint.com/lm-img/pf/img/crif/crif-logo.png"
-              alt="CRIF Logo"
-              className="h-5 w-auto"
-            />
+            <img src="https://images.livemint.com/img/2019/10/25/1600x900/live_mint_logo_1572001076410.png" alt="MVM Logo" className="h-5 w-auto" />
           </div>
         </div>
       </div>

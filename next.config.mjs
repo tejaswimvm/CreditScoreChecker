@@ -1,7 +1,7 @@
 // next.config.mjs
 const nextConfig = {
     images: {
-      domains: ['www.livemint.com'],
+      domains: ['www.livelivet.in ',"images.livemint.com"],
     },
   };
   

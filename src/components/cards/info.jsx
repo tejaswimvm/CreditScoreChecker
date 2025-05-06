@@ -6,19 +6,19 @@ const Info = () => {
       title: "Amazing Offers",
       subtitle: "Grab exciting deals & discounts from premium brands.",
       bg: "bg-[#ede9fe] border border-[#c4b5fd]",
-      icon: "https://www.livemint.com/lm-img/pf/img/crif_access_offers.webp",
+      icon: "https://www.livelivet.in /lm-img/pf/img/crif_access_offers.webp",
     },
     {
       title: "Curated Insights",
       subtitle: "Expert advice, podcasts, and tools to guide you.",
       bg: "bg-[#f3f4f6] border border-gray-300",
-      icon: "https://www.livemint.com/lm-img/pf/img/crif_exlusive_insight.webp",
+      icon: "https://www.livelivet.in /lm-img/pf/img/crif_exlusive_insight.webp",
     },
     {
       title: "Score Boost Tips",
       subtitle: "Simple actions to improve and maintain your credit score.",
       bg: "bg-[#eff6ff] border border-[#bfdbfe]",
-      icon: "https://www.livemint.com/lm-img/pf/img/crif_curated_content.webp",
+      icon: "https://www.livelivet.in /lm-img/pf/img/crif_curated_content.webp",
     },
   ];
 
@@ -47,7 +47,7 @@ const Info = () => {
                   className="w-12 h-12 object-contain"
                 />
                 <img
-                  src="https://www.livemint.com/lm-img/pf/img/white_right_arrow.svg"
+                  src="https://www.livelivet.in /lm-img/pf/img/white_right_arrow.svg"
                   alt="Arrow"
                   className="w-4 h-4 opacity-50"
                 />
