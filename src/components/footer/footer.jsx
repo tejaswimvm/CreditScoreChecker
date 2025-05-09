@@ -18,8 +18,8 @@ export default function Footer() {
     <footer className="bg-[#111] text-white py-4">
       <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
         {/* Logo */}
-        <Link href="/" className="flex-shrink-0">
-          <Image src="https://images.livemint.com/img/2019/10/25/1600x900/live_mint_logo_1572001076410.png" alt="Livet Logo" width={120} height={42} />
+        <Link href="/" className="flex-shrink-0  text-white">
+           <span>Livet.in</span>
         </Link>
 
         {/* Links */}

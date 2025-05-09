@@ -44,30 +44,31 @@ export default function ContactUs() {
   return (
     <>
       <hr className="border-gray-300" />
-      <div className="min-h-screen bg-white text-black flex flex-col items-center justify-center p-8">
-        <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="min-h-screen bg-white text-black flex flex-col items-center justify-center px-6 py-16">
+        <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Left Side */}
           <div className="space-y-6">
-            <h4 className="text-gray-500 font-semibold">Contact us</h4>
-            <h2 className="text-4xl font-bold">Get in touch</h2>
-            <p className="text-gray-600">
+            <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wide">Contact us</h4>
+            <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">Get in touch</h2>
+            <p className="text-gray-600 text-lg">
               We'd love to hear from you. Fill out the form and our team will get back to you shortly.
             </p>
 
             <div className="space-y-4 text-gray-700">
               <div className="flex items-center space-x-3">
-                <span>📧</span>
-                <span>contact@mvmbs.com</span>
+                <span className="text-xl">📧</span>
+                <span className="text-base">contact@mvmbs.com</span>
               </div>
               <div className="flex items-center space-x-3">
-                <span>📍</span>
-                <span>I Thum I.T. Park, Sector 62 Noida, Uttar Pradesh</span>
+                <span className="text-xl">📍</span>
+                <span className="text-base">I Thum I.T. Park, Sector 62 Noida, Uttar Pradesh</span>
               </div>
             </div>
 
-            <div className="mt-8 rounded-lg overflow-hidden shadow-lg">
+            <div className="mt-8 rounded-lg overflow-hidden shadow-lg border border-gray-200">
               <iframe
-                src="https://images.livemint.com/img/2019/10/25/1600x900/live_mint_logo_1572001076410.png"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.0784869880545!2d77.36979007536928!3d28.627409684313502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce569b7660581%3A0xc967ef0b896097d5!2sMVM%20Business%20Services!5e0!3m2!1sen!2sin!4v1745561694261!5m2!1sen!2sin"
+                title="MVMBS Office Map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.0784869880545!2d77.36979007536928!3d28.627409684313502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce569b7660581%3A0xc967ef0b896097d5!2sMVM%20Business%20Services!5e0!3m2!1sen!2sin!4v1745561694261!5m2!1sen!2sin"
                 width="100%"
                 height="300"
                 style={{ border: 0 }}
@@ -79,20 +80,23 @@ export default function ContactUs() {
           </div>
 
           {/* Right Side - Form */}
-          <form className="space-y-6 bg-gray-100 p-8 rounded-lg shadow" onSubmit={handleSubmit}>
+          <form
+            className="space-y-6 bg-gray-50 p-8 rounded-xl shadow-xl border border-gray-200"
+            onSubmit={handleSubmit}
+          >
             <input type="hidden" name="access_key" value="8d887b6d-94e3-48cf-9455-a85001f477b7" />
 
             <div>
               <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-700">
-                Name
+                Name <span className="text-red-500">*</span>
               </label>
               <input
                 name="name"
-                type="text"
                 id="name"
-                placeholder="Your Name"
+                type="text"
                 required
-                className="w-full p-3 bg-white text-black border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-black"
+                placeholder="Your Name"
+                className="w-full p-3 border border-gray-300 rounded-md bg-white text-black focus:outline-none focus:ring-2 focus:ring-black"
               />
             </div>
 
@@ -102,39 +106,39 @@ export default function ContactUs() {
               </label>
               <input
                 name="company"
-                type="text"
                 id="company"
+                type="text"
                 placeholder="Company Name"
-                className="w-full p-3 bg-white text-black border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-black"
+                className="w-full p-3 border border-gray-300 rounded-md bg-white text-black focus:outline-none focus:ring-2 focus:ring-black"
               />
             </div>
 
             <div className="flex flex-col md:flex-row gap-4">
               <div className="w-full">
                 <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-700">
-                  Email
+                  Email <span className="text-red-500">*</span>
                 </label>
                 <input
                   name="email"
-                  type="email"
                   id="email"
-                  placeholder="Email Address"
+                  type="email"
                   required
-                  className="w-full p-3 bg-white text-black border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-black"
+                  placeholder="Email Address"
+                  className="w-full p-3 border border-gray-300 rounded-md bg-white text-black focus:outline-none focus:ring-2 focus:ring-black"
                 />
               </div>
 
               <div className="w-full">
                 <label htmlFor="phone" className="block mb-2 text-sm font-medium text-gray-700">
-                  Phone Number
+                  Phone Number <span className="text-red-500">*</span>
                 </label>
                 <input
                   name="phone"
-                  type="tel"
                   id="phone"
-                  placeholder="Phone Number"
+                  type="tel"
                   required
-                  className="w-full p-3 bg-white text-black border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-black"
+                  placeholder="Phone Number"
+                  className="w-full p-3 border border-gray-300 rounded-md bg-white text-black focus:outline-none focus:ring-2 focus:ring-black"
                 />
               </div>
             </div>
@@ -148,25 +152,25 @@ export default function ContactUs() {
                 id="message"
                 rows={4}
                 placeholder="Type your message..."
-                className="w-full p-3 bg-white text-black border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-black resize-none"
-              />
+                className="w-full p-3 border border-gray-300 rounded-md bg-white text-black focus:outline-none focus:ring-2 focus:ring-black resize-none"
+              ></textarea>
             </div>
 
             <div className="flex items-start">
               <input
-                type="checkbox"
                 id="checkbox"
+                type="checkbox"
                 checked={agreed}
                 onChange={() => setAgreed(!agreed)}
-                className="mt-1 mr-2"
+                className="mt-1 mr-3 cursor-pointer"
               />
               <label htmlFor="checkbox" className="text-sm text-gray-600">
                 By submitting, I agree to the{" "}
-                <Link href="/privacy-policy" className="underline font-semibold">
+                <Link href="/privacy-policy" className="underline font-semibold text-gray-800">
                   Privacy Policy
                 </Link>{" "}
                 and{" "}
-                <Link href="/terms-of-use" className="underline font-semibold">
+                <Link href="/terms-of-use" className="underline font-semibold text-gray-800">
                   Terms of Use
                 </Link>
                 .
@@ -176,12 +180,18 @@ export default function ContactUs() {
             <button
               type="submit"
               disabled={!agreed || loading}
-              className={`w-full py-3 font-semibold rounded transition ${
-                agreed ? "bg-black text-white hover:bg-gray-800" : "bg-gray-400 text-white cursor-not-allowed"
+              className={`w-full py-3 font-medium rounded-md transition-all ${
+                agreed
+                  ? "bg-black text-white hover:bg-gray-900"
+                  : "bg-gray-300 text-gray-600 cursor-not-allowed"
               }`}
             >
               {loading ? "Sending..." : "Send Message"}
             </button>
+
+            {submitted && (
+              <p className="text-sm text-green-600 text-center mt-4">Thank you! Your message has been sent.</p>
+            )}
           </form>
         </div>
       </div>

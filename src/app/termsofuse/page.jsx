@@ -5,29 +5,33 @@ export default function TermsOfServicePage() {
 
       <div className="space-y-8 text-base leading-relaxed">
         <p>
-          Welcome to Top5Shots! By using our platform, you agree to the following terms. Please read them carefully.
+          Welcome to <strong>livet.in</strong>! By using our credit score checking platform, you agree to the terms outlined below. Please read them carefully before proceeding.
         </p>
 
         {[
           {
-            title: '1. Use of the Platform',
-            body: 'You agree to use Top5Shots only for lawful purposes and in ways that respect others’ rights.'
+            title: "1. Use of the Service",
+            body: "You agree to use livet.in only for lawful purposes and to check your own credit score or that of others with proper authorization."
           },
           {
-            title: '2. Content Ownership',
-            body: 'You retain ownership of your content but grant Top5Shots a license to display and distribute it as needed.'
+            title: "2. Accuracy of Information",
+            body: "You are responsible for providing accurate and up-to-date information when using our services. False data may affect your results."
           },
           {
-            title: '3. Account Responsibilities',
-            body: 'You are responsible for your account credentials and any activity on your account.'
+            title: "3. Data Privacy",
+            body: "We take privacy seriously. Your personal data is used only for providing credit insights and is handled in accordance with our Privacy Policy."
           },
           {
-            title: '4. Termination',
-            body: 'We may suspend or terminate access for violations of our terms or misuse of the platform.'
+            title: "4. Service Availability",
+            body: "We strive to maintain reliable service, but we do not guarantee uninterrupted access. We may modify or discontinue features at any time."
           },
           {
-            title: '5. Modifications',
-            body: 'We may update these terms from time to time. Continued use implies acceptance of the revised terms.'
+            title: "5. Termination",
+            body: "We reserve the right to suspend or terminate your access for violations of these terms, including misuse of the service or attempts to breach security."
+          },
+          {
+            title: "6. Changes to Terms",
+            body: "We may update these Terms of Service occasionally. Continued use of the platform after changes implies your acceptance of the updated terms."
           }
         ].map(({ title, body }) => (
           <section key={title}>
@@ -38,8 +42,8 @@ export default function TermsOfServicePage() {
 
         <p className="text-gray-600 border-t pt-6">
           Have questions? Contact us at{" "}
-          <a href="mailto:support@top5shots.com" className="text-blue-600 underline hover:text-blue-800">
-            support@top5shots.com
+          <a href="mailto:support@livet.in" className="text-blue-600 underline hover:text-blue-800">
+            support@livet.in
           </a>.
         </p>
       </div>

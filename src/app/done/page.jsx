@@ -20,7 +20,7 @@ const page = () => {
         {/* Right Section - Video */}
         <div className="w-full lg:w-1/2 rounded-xl overflow-hidden shadow-inner mx-auto">
           <video
-            src="https://images.livemint.com/img/2019/10/25/1600x900/live_mint_logo_1572001076410.png"/video/meter.mp4"
+            src="/video/meter.mp4"
             autoPlay
             muted
             playsInline
