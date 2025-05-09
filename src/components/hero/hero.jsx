@@ -140,7 +140,7 @@ const Hero = () => {
                 type="submit"
                 className="w-full py-3 bg-blue-600 text-white font-medium rounded-xl shadow hover:bg-blue-700 transition"
               >
-                Next
+                Get Your Score
               </button>
             </form>
           ) : (

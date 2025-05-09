@@ -5,7 +5,7 @@ import React from "react";
 
 const page = () => {
   return (
-    <section className="bg-gradient-to-br from-gray-50 to-white py-16 px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32">
+    <section className="bg-gradient-to-br from-gray-50 to-white py-16 px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32 mb-20">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
         {/* Left Section - Message */}
         <div className="w-full lg:w-1/2 space-y-6 text-center lg:text-left">
